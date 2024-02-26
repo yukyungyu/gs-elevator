@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <title>GS엘리베이터</title>
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="deemd"></div>
+  <div class="wrapper">
+    <div class="skip-nav">
+      <a href="#main">본문내용바로가기</a>
+    </div>
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="/" class="logo-img">
+            <span class="blind">GS엘리베이터로고</span>
+          </a>
+        </h1>
+        <div class="header-wrap">
+          <div class="gnb-wrap mo">
+            <nav class="gnb">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="#">회사소개</a>
+                  <div class="sub">
+                    <ul>
+                      <li><a href="#none">개요</a></li>
+                      <li><a href="#none">지속가능경영</a></li>
+                      <li><a href="#none">뉴스룸</a></li>
+                      <li><a href="#none">사업장</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <a href="#">제품</a>
+                  <div class="sub">
+                    <ul>
+                      <li><a href="#none">엘리베이터</a></li>
+                      <li><a href="#none">신규설치</a></li>
+                      <li><a href="#none">전면 교체</a></li>
+                      <li><a href="#none">주요 프로젝트</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <a href="#">유지관리 서비스</a>
+                  <div class="sub">
+                    <ul>
+                      <li><a href="#none">GS 케어 플러스</a></li>
+                      <li><a href="#none">Scope&Lift<br>&nbsp;<small>(원격제어서비스)</small></a></li>
+                      <li><a href="#none">부분 교체</a></li>
+                      <li><a href="#none">부품 정보조회</a></li>
+                      <li><a href="#none">서비스 네트워크</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <a href="#">고객지원</a>
+                  <div class="sub">
+                    <ul>
+                      <li><a href="#none">라이브러리</a></li>
+                      <li><a href="#none">문의하기</a></li>
+                      <li><a href="#none">자주 묻는 질문</a></li>
+                      <li><a href="#none">사이버 신문고</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <a href="#">채용안내</a>
+                  <div class="sub">
+                    <ul>
+                      <li><a href="#none">인재상</a></li>
+                      <li><a href="#none">인사제도</a></li>
+                      <li><a href="#none">직무소개</a></li>
+                      <li><a href="#none">채용공고</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="banner">
+                <a href="#">GS엘리베이터<br>회사소개서 다운로드 
+                  <span class="icon">
+                    <img src="./assets/images/icon-download.svg" alt="회사소개서다운로드">
+                  </span>
+                </a>
+              </div>
+            </nav>
+            <div class="util">
+              <div class="search-wrap">
+                <button class="btn-search">
+                  <span class="blind">검색</span>
+                  <i class="icon-search"></i>
+                </button>
+                <div class="search-box">
+                  <div class="input-area">
+                    <input type="text" id="search" placeholder="검색어를 입력해주세요.">
+                    <label for="search">
+                      <span class="blind">검색하기</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="lang-wrap">
+                <button class="btn-lang">
+                  <span class="blind">언어 선택</span>
+                  <i class="icon-lang"></i>
+                </button>
+                <ul class="lang-list">
+                  <li class="lang-item current"><a href="#none"><span>KR</a></span></li>
+                  <li class="lang-item"><a href="#none"><span>EN</a></span></li>
+                </ul>
+              </div>
+            </div>
+            <button class="btn-help">
+              Help <i class="plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mo-menu">
+        <span class="blind">모바일메뉴</span>
+      </div>
+      <div class="mo-btn-help">
+        Help <i class="plus"></i>
+      </div>
+    </header>
+    
+    
+    <main class="container" id="main">
+      <section class="sc-intro">
+        <div class="bg-video">
+          <span class="blind">GS엘리베이터 동영상</span>
+          <video id="video" class="intro-video" src="./assets/images/main_visual_video.mp4" muted loop></video>
+        </div>
+        <div class="intro-inner">
+          <div class="wrap">
+            <div class="group-introText" data-motion="introText">
+              <div class="text-area">
+                <h2 class="intro-title">
+                  G<span>round to</span>S<span>ky,</span>
+                  <br>Elevate Trust
+                </h2>
+                <p class="intro-subtitle">고객에게 최고의 경험을 선사하고<br> 엘리베이터의 기준을 높이겠습니다.</p>
+              </div>
+            </div>
+            <div class="group-control">
+              <div class="progress-bar">
+                <div class="playing-bar"></div>
+              </div>
+              <button class="btn-control pause" aria-label="비디오정지"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-elevating">
+        <div class="inner">
+          <div class="group-text" data-motion="text">
+            <h2 class="title">경쟁력</h2>
+            <p class="sub-title">신뢰와 경험 그리고 삶, 고객중심 가치를 지향합니다.</p>
+          </div>
+          <div class="group-img">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" data-motion="hover">
+                  <div class="hover-area">
+                    <h3 class="slide-title">Elevating trust</h3>
+                    <p>국내 제조·생산공장 운영으로 최고 품질의<br>제품과 서비스를 제공합니다.</p>
+                    <a  href="#none" class="link-go">바로가기 <span class="arrow"></span></a>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-motion="hover">
+                  <div class="hover-area">
+                    <h3 class="slide-title">Elevating experience</h3>
+                    <p>환경, 안전, 휴식을 위한 디자인으로<br>차별화된 경험과 만족을 선사합니다.</p>
+                    <a class="link-go" href="#none">바로가기 <span class="arrow"></span></a>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-motion="hover">
+                  <div class="hover-area">
+                    <h3 class="slide-title">Elevating lives</h3>
+                    <p>지속가능성을 지향하는 진보된 제품으로<br>새로운 가치를 만듭니다.</p>
+                    <a class="link-go" href="#none">바로가기 <span class="arrow"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-solution">
+        <div class="inner">
+          <div class="group-text" data-motion="text">
+            <h2 class="title">솔루션</h2>
+            <p class="sub-title">
+              GS의 풍부한 노하우로 <span class="br"></span>
+              최고의 솔루션을 제공합니다.
+            </p>
+          </div>
+          <div class="group-solution">
+            <ul class="solution-list">
+              <li class="solution-item">
+                <div class="item-inner">
+                  <div class="item-wrap">
+                    <div class="icon-box">
+                      <img src="./assets/images/sec02_icon01.svg" alt="신규설치아이콘">
+                    </div>
+                    <h3 class="solution-name">신규 설치</h3>
+                    <p>모던한 분위기와 세련된 디자인으로<br>건물의 품격을 높여드립니다.</p>
+                  </div>
+                  <a  class="link-go" href="#none">바로가기 <span class="arrow"></span></a>
+                </div>
+              </li>
+              <li class="solution-item">
+                <div class="item-inner">
+                  <div class="item-wrap">
+                    <div class="icon-box">
+                      <img src="./assets/images/sec02_icon02.svg" alt="전면교체아이콘">
+                    </div>
+                    <h3 class="solution-name">전면 교체</h3>
+                    <p>노후 승강기를 전면 교체하여<br>새로운 가치를 부여합니다.</p>
+                  </div>
+                  <a class="link-go" href="#none">바로가기 <span class="arrow"></span></a>
+                </div>
+              </li>
+              <li class="solution-item">
+                <div class="item-inner">
+                  <div class="item-wrap">
+                    <div class="icon-box">
+                      <img src="./assets/images/sec02_icon03.svg" alt="부분교체아이콘">
+                    </div>
+                    <h3 class="solution-name">부분 교체</h3>
+                    <p>승강기의 노후된 부분을 면밀히 파악하여<br>핵심 교체를 진행합니다.</p>
+                  </div>
+                  <a class="link-go" href="#none">바로가기 <span class="arrow"></span></a>
+                </div>
+              </li>
+              <li class="solution-item">
+                <div class="item-inner">
+                  <div class="item-wrap">
+                    <div class="icon-box">
+                      <img src="./assets/images/sec02_icon04.svg" alt="신규설치아이콘">
+                    </div>
+                    <h3 class="solution-name">유지관리 서비스</h3>
+                    <p>GS엘리베이터의 기술력을 통해<br>제품의 안전운행을 보장합니다.</p>
+                  </div>
+                  <a class="link-go" href="#none">바로가기 <span class="arrow"></span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-gnovia">
+        <div class="bg-box"></div>
+        <div class="inner">
+          <div class="group-text" data-motion="text">
+            <h2 class="title">G·NOVIA</h2>
+            <p class="sub-title">
+              엘리베이터, 그 이상의 가치를 지닌<br>‘공간’으로 존재합니다.
+            </p>
+            <a class="link-pro btn" href="#none">
+              제품 바로가기 <span class="arrow white"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-synergy">
+        <div class="inner">
+          <div class="group-text" data-motion="text">
+            <h2 class="title">시너지</h2>
+            <p class="sub-title">고객과 함께 내일을 꿈꾸며 새로운 삶의 가치를 창조하는<br>
+            GS건설의 경영이념을 바탕으로,<br>
+            GS엘리베이터는 고객의 더 나은 미래를 만들어 가겠습니다.</p>
+          </div>
+          <div class="group-info">
+            <div class="video-box">
+              <span class="blind">GS엘리베이터 동영상</span>
+              <video src="./assets/images/sec04_video.mp4" muted autoplay></video>
+            </div>
+            <ul class="number-list">
+              <li class="number-item">
+                <i class="icon-01">
+                  <img src="./assets/images/sec04_icon01.svg" alt="">
+                </i>
+                <div class="counter">
+                  <div class="digit" data-direction="down" data-current="1">
+                  </div>
+
+                  <div class="digit" data-direction="up" data-current="9">
+                  </div>
+
+                  <div class="digit" data-direction="down" data-current="6">
+                  </div>
+                  <div class="digit" data-direction="up" data-current="9">
+                  </div>
+                </div>
+                <p><span class="blind">1992</span>년</p>
+                <p class="title">GS건설 창립연도</p>
+              </li>
+
+              <li class="number-item">
+                <i class="icon-01">
+                  <img src="./assets/images/sec04_icon02.svg" alt="">
+                </i>
+                <div class="counter">
+                  <div class="digit" data-direction="down" data-current="4"></div>
+                  <div class="digit" data-direction="up" data-current="4"></div>
+                </div>
+                <p><span class="blind">44위</span>위</p>
+                <p class="title">GS건설 세계 랭킹</p>
+              </li>
+
+              <li class="number-item">
+                <i class="icon-01">
+                  <img src="./assets/images/sec04_icon03.svg" alt="">
+                </i>
+                <div class="counter">
+                  <div class="digit" data-direction="down" data-current="2"></div>
+                  <div class="digit" data-direction="up" data-current="3"></div>
+                </div>
+                <p><span class="blind">23</span>개 국</p>
+                <p class="title">GS건설 진출국가</p>
+              </li>
+
+              <li class="number-item">
+                <i class="icon-01">
+                  <img src="./assets/images/sec04_icon04.svg" alt="">
+                </i>
+                <div class="counter">
+                  <div class="digit" data-direction="down" data-current="1"></div>
+                  <div class="digit" data-direction="up" data-current="9"></div>
+                  <div class="digit" data-direction="down" data-current="1"></div>
+                </div>
+                <p><span class="blind">191</span>건</p>
+                <p class="title">건설현장 건 수</p>
+              </li>
+
+              <li class="number-item">
+                <i class="icon-01">
+                  <img src="./assets/images/sec04_icon05.svg" alt="">
+                </i>
+                <div class="counter">
+                  <div class="digit" data-direction="down" data-current="1"></div>
+                  <div class="digit" data-direction="up" data-current="2"></div>
+                </div>
+                <p><span class="blind">12</span>년 연속 편입</p>
+                <p class="title">지속가능경영지수</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-project">
+        <div class="inner">
+          <div class="group-text" data-motion="text">
+            <h2 class="title">주요 프로젝트</h2>
+            <p class="sub-title">하이엔드 브랜드 아파트에서 오피스까지, GS엘리베이터가 함께합니다.</p>
+          </div>
+          <!-- swiper -->
+          <div class="p-Swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj01.png" alt="양평 자이비즈타워">
+                </div>
+                <p class="pj-name">양평 자이비즈타워</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj02.png" alt="천검단3BL 오피스텔">
+                </div>
+                <p class="pj-name">인천검단3BL 오피스텔</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj03.png" alt="향동 오피스텔">
+                </div>
+                <p class="pj-name">향동 오피스텔</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj04.png" alt="답십리 지웰 에스테이트">
+                </div>
+                <p class="pj-name">답십리 지웰 에스테이트</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj05.png" alt="개봉동 지웰 에스테이트">
+                </div>
+                <p class="pj-name">개봉동 지웰 에스테이트</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj06.png" alt="양평 자이비즈타워">
+                </div>
+                <p class="pj-name">의정부 고산1-1, 1-2블럭</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj07.png" alt="별내 지웰 에스테이트">
+                </div>
+                <p class="pj-name">별내 지웰 에스테이트</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj08.png" alt="대전스카이자이르네">
+                </div>
+                <p class="pj-name">대전스카이자이르네</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj09.png" alt="라포르테 블랑 서현">
+                </div>
+                <p class="pj-name">라포르테 블랑 서현</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="./assets/images/project/pj10.png" alt="라포르테 블랑 여의도">
+                </div>
+                <p class="pj-name">라포르테 블랑 여의도</p>
+              </div>
+            </div>
+            <div class="control-area">
+              <div class="swiper-pagination"></div>
+              <div class="btn-area">
+                <button class="btn-prev" aria-label="이전슬라이드">
+                </button>
+                <button class="btn-next" aria-label="다음슬라이드">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-support">
+        <div class="inner">
+          <div class="line-top">
+            <div class="group-text" data-motion="text">
+              <h2 class="title">고객지원</h2>
+              <p class="sub-title">고객만족, 신뢰를 위하여 최적의 서비스를 제공합니다.</p>
+            </div>
+            <div class="group-links" data-motion="text">
+              <ul class="link-list">
+                <li class="link-item">
+                  <a href="#none" class="cate">서비스 네트워크</a>
+                </li>
+                <li class="link-item">
+                  <a href="#none" class="cate">제품 카탈로그</a>
+                </li>
+                <li class="link-item">
+                  <a href="#none" class="cate">도면</a>
+                </li>
+                <li class="link-item">
+                  <a href="#none">문의하기</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="banner-box" data-motion="text">
+            <div class="banner">
+              <i class="symbol"></i>
+              <a class="link-recruit" href="#none">
+                <i class="icon-arrowTop"></i>
+                <strong>GS엘리베이터의<span class="m-br"></span> 끝없는 도전에 <span class="br"></span>함께할 인재를 찾습니다.</strong>
+                <p>지금 GS엘리베이터의 <span class="br"></span>채용공고를 확인해보세요!</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2 class="blind">GS엘리베이터 푸터</h2>
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <a href="/" class="footer-logo-img">
+              <span class="blind">GS엘리베이터푸터 로고</span>
+            </a>
+          </div>
+
+          <div class="footer-info">
+            <address>
+              <p>INFORMATION</p>
+              <p>주소 : 서울특별시 서초구 남부순환로 2477 GS건설 서초타워 7, 8층<br>TEL : 1670-0917 </p>
+            </address>
+            <small class="copyright">
+              copyright &copy; gs엘리베이터. all rights reserved.
+            </small>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-link">
+            <button class="cate">이메일무단수집거부</button>
+            <a href="#none">개인정보처리방침</a>
+          </div>
+
+          <div class="family-area">
+            <button class="btn-family" href="#none">Family Site <i class="plus"></i></button>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="/" class="btn-top">
+      <span class="blind">위로 올라가기</span>
+    </a>
+  
+  </div>
+
+
+
+  <!-- jquery -->
+  <script type="text/javascript" src="./assets/js/jquery-3.7.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <!-- lenis -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script> 
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- custom -->
+  <script src="./assets/js/custom.js"></script>
+</body>
+</html>

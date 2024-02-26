@@ -1,0 +1,14 @@
+// _파일들을 다불러와줌
+// 파일마다 역할이 정확함
+
+@import './util/var';
+@import './util/mixin';
+
+@import './base/reset';
+@import './base/typo';
+@import './base/common';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './page/main';

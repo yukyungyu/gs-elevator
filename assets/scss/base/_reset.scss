@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+*, :after, :before {
+	box-sizing: border-box;
+}
+:root {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	cursor: default;
+	line-height: 1.5;
+	overflow-wrap: break-word;
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	&:hover, &:active {
+		text-decoration: none;
+	}
+}
+ul {
+	list-style: none;
+}
+fieldset {
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input, select {
+	appearance: none;
+	background: transparent;
+}
+html, body {
+	height: 100%;
+	word-break: keep-all;
+	font-size: 16px;
+}
+body {
+	font-family: "Pretendard", sans-serif, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+	color: #333333;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-text-size-adjust: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	line-height: 1;
+}
