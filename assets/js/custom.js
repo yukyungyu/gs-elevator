@@ -238,7 +238,7 @@
   const $countWrap = $('.sc-synergy').find('.digit');
   const count = [0,1,2,3,4,5,6,7,8,9];  
   let listHeight = $countWrap.outerHeight(); //100, 70, 58, 48
-  console.log(`listHeight: ${listHeight}`);
+  // console.log(`listHeight: ${listHeight}`);
 
   $countWrap.each(function(idx, target){
 
@@ -359,3 +359,14 @@
       },
     })
   })
+
+
+  $(window).resize(function() {
+    if ($(window).width() < 768) {
+      document.location.reload();
+    } else if ($(window).width() < 1024) {
+      document.location.reload();
+    } else if ($(window).width() < 1400) {
+      document.location.reload();
+    }
+  });
