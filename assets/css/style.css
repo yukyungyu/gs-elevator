@@ -311,7 +311,7 @@ section .inner {
   display: inline-block;
 }
 
-.link-go {
+.link-btn {
   position: relative;
   display: inline-block;
   min-width: 160px;
@@ -322,38 +322,55 @@ section .inner {
   font-size: 20px;
   letter-spacing: -0.03em;
   line-height: 1;
-  background-color: #fff;
-  color: #107AF2;
-  border: 1px solid #107AF2;
+  z-index: 1;
   text-align: center;
   overflow: hidden;
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
-.link-go::before {
+.link-btn::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 100%;
   left: 0;
-  background-color: #107AF2;
-  color: #fff;
-  border: 1px solid #107AF2;
   opacity: 0;
   -webkit-transition: top 0.2s linear;
   transition: top 0.2s linear;
   z-index: -1;
+}
+.link-btn:hover::before {
+  opacity: 1;
+  top: 0;
+}
+.link-btn .arrow {
+  display: inline-block;
+  width: 17px;
+  height: 13px;
+  margin-left: 20px;
+  background: url("../images/btn-arrow-blue.svg") no-repeat center center;
+  background-size: cover;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.link-btn .arrow:hover {
+  background: url("../images/btn-arrow-white.svg") no-repeat center center;
+}
+
+.link-go {
+  background-color: #fff;
+  color: #107AF2;
+  border: 1px solid #107AF2;
+}
+.link-go::before {
+  background-color: #107AF2;
 }
 .link-go:hover {
   color: #fff;
 }
 .link-go:hover .arrow {
   background: url("../images/btn-arrow-white.svg") no-repeat center center;
-}
-.link-go:hover::before {
-  opacity: 1;
-  top: 0;
 }
 .link-go .arrow {
   display: inline-block;
@@ -367,6 +384,34 @@ section .inner {
 }
 .link-go .arrow:hover {
   background: url("../images/btn-arrow-white.svg") no-repeat center center;
+}
+
+.link-pro {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 1px solid #CACACA;
+}
+.link-pro::before {
+  background-color: #fff;
+}
+.link-pro:hover {
+  color: #333;
+}
+.link-pro:hover .arrow {
+  background: url("../images/btn-arrow-black.svg") no-repeat center center;
+}
+.link-pro .arrow {
+  display: inline-block;
+  width: 17px;
+  height: 13px;
+  margin-left: 20px;
+  background: url("../images/btn-arrow-white.svg") no-repeat center center;
+  background-size: cover;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.link-pro .arrow:hover {
+  background: url("../images/btn-arrow-black.svg") no-repeat center center;
 }
 
 @media (max-width: 1399px) {
@@ -1608,7 +1653,7 @@ section .inner {
   margin-top: 15px;
   text-align: center;
 }
-.sc-solution .solution-list .solution-item .link-go {
+.sc-solution .solution-list .solution-item .link-go, .sc-solution .solution-list .solution-item .link-move {
   margin-top: 30px;
 }
 
@@ -1645,48 +1690,6 @@ section .inner {
   margin-top: 45px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  display: inline-block;
-  min-width: 160px;
-  width: auto;
-  padding: 16px 24px;
-  border-radius: 99px;
-  border: 1px solid #CACACA;
-  background: rgba(0, 0, 0, 0.5);
-  font-size: 20px;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  overflow: hidden;
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
-  opacity: 0;
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
-  -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
-  transition: opacity 0.45s, -webkit-transform 0.45s;
-  transition: opacity 0.45s, transform 0.45s;
-  transition: opacity 0.45s, transform 0.45s, -webkit-transform 0.45s;
-}
-.sc-gnovia .group-text .link-pro::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #CACACA;
-}
-.sc-gnovia .group-text .link-pro:hover {
-  color: #333;
-}
-.sc-gnovia .group-text .link-pro:hover::before {
-  height: 100%;
-  -webkit-animation: btnAni 0.3s linear;
-          animation: btnAni 0.3s linear;
-}
-.sc-gnovia .group-text .link-pro .arrow.white {
-  background: url(../images/btn-arrow-white.svg);
 }
 
 @-webkit-keyframes btnAni {

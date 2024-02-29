@@ -279,7 +279,7 @@
         text-align: center;
       }
       
-      .link-go {
+      .link-go, .link-move {
         margin-top: 30px;
       }
     }
@@ -323,46 +323,6 @@
       margin-top: 45px;
       margin-left: auto;
       margin-right: auto;
-      position: relative;
-      display: inline-block;
-      min-width: 160px;
-      width: auto;
-      padding: 16px 24px;
-      border-radius: 99px;
-      border: 1px solid #CACACA;
-      background: rgba(0, 0, 0, 0.5);
-      font-size: 20px;
-      letter-spacing: -0.03em;
-      line-height: 1;
-      color: #fff;
-      text-align: center;
-      overflow: hidden;
-      transition: color 0.2s linear;
-      opacity: 0;
-      transform: translateY(30%);
-      transition: opacity 0.45s, transform 0.45s;
-      
-      &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: #CACACA;
-      }
-      
-      &:hover {
-        color: #333;
-        
-        &::before {
-          height: 100%;
-          animation: btnAni 0.3s linear;
-        }
-      }
-      
-      .arrow.white {
-        background: url(../images/btn-arrow-white.svg);
-      }
     }
 	}
 }
