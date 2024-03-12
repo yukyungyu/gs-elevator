@@ -172,7 +172,6 @@
       trigger: ".sc-elevating",
       start: "0% 95%",
       end: "100% 100%",
-      // markers: true,
       toggleActions:"play none none reset",
     },
   })
@@ -190,7 +189,6 @@
       trigger: ".solution-list",
       start: "0% 95%",
       end: "100% 100%",
-      // markers: true,
       toggleActions:"play none none reset"
     },
   });
@@ -330,7 +328,6 @@
     trigger: '.sc-project', 
     start: "0% 80%",
     end: "100% 100%",
-    // markers: true,
     onEnter: function(){
       gsap.from('.sc-project .p-Swiper .swiper-slide', 1, {
         xPercent: 200,
@@ -348,7 +345,6 @@
         scrub: true,
         start: "0% 95%",
         end: "100% 100%",
-        // markers: true,
         scrub: 1,
         onEnter: function(){
           $(el).addClass('on');
